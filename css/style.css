@@ -367,28 +367,12 @@ main#main { flex: 1; width: 100%; }
 .api-panel a { color: var(--accent); text-decoration: none; }
 .api-panel a:hover { text-decoration: underline; }
 
-.info-footer {
-  text-align: center;
-  padding: 20px 24px 28px;
-  color: var(--text-muted);
-  font-size: 0.78em;
-  border-top: 1px solid var(--border);
-}
-.footer-link { color: var(--text-muted); text-decoration: none; }
-.footer-link:hover { color: var(--text-secondary); }
 
 .btn-ghost:focus-visible,
 .list-pill:focus-visible,
 .header-logo a:focus-visible,
 .header-title-link:focus-visible,
 .header-home:focus-visible,
-.footer-link:focus-visible,
-.api-panel summary:focus-visible,
-.api-panel a:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-  border-radius: var(--radius-sm);
-}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
