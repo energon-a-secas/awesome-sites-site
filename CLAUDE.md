@@ -1,4 +1,4 @@
-# CLAUDE.md — Awesome Sites
+# CLAUDE.md: Awesome Sites
 
 Curated external bookmarks with labeled lists and a static JSON API for the Neorgon hub.
 
