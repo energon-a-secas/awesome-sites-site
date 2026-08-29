@@ -1,6 +1,6 @@
 ---
 name: Awesome Sites
-description: Curated external links you leave open — preview-led catalog on the Neorgon dark shell
+description: Curated external links you leave open, preview-led catalog on the Neorgon dark shell
 colors:
   ink-night: "#0a0c12"
   elevated-slate: "#12151c"

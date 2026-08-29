@@ -1,6 +1,6 @@
 # Awesome Sites
 
-Curated external sites with labeled lists — the tabs you leave open. Static JSON catalog and API for the [Neorgon hub](https://neorgon.com/).
+Curated external sites with labeled lists. The tabs you leave open. Static JSON catalog and API for the [Neorgon hub](https://neorgon.com/).
 
 **Live:** [awesomesites.neorgon.com](https://awesomesites.neorgon.com/)
 
@@ -14,8 +14,8 @@ make previews # download OG images into assets/previews/ (requires network)
 
 ## Data
 
-- `data/sites.json` — site entries (`id`, `name`, `url`, `description`, `labels`, `accent`, `featuredOnHub`)
-- `data/lists.json` — curated lists (`id`, `label`, `description`, `siteIds`). Current lists: Video, Colors & fonts, Image edition/modification/cutting, Image & text content, Icons & GIFs, Sites, Music, Random (fun/dev/reviews), plus Whiteboard and DevOps.
+- `data/sites.json`: site entries (`id`, `name`, `url`, `description`, `labels`, `accent`, `featuredOnHub`)
+- `data/lists.json`: curated lists (`id`, `label`, `description`, `siteIds`). Current lists: Video, Colors & fonts, Image edition/modification/cutting, Image & text content, Icons & GIFs, Sites, Music, Random (fun/dev/reviews), plus Whiteboard and DevOps.
 
 ### Preview images
 

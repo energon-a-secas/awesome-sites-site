@@ -1,8 +1,8 @@
-# Awesome Sites — Product notes
+# Awesome Sites: Product notes
 
 ## Purpose
 
-A lightweight catalog of **edition and content tools** — video, colors, image work, stock assets, icons, music, meta/SEO helpers, and misc tabs — organized with **curated lists** instead of a rigid taxonomy.
+A lightweight catalog of **edition and content tools**, video, colors, image work, stock assets, icons, music, meta/SEO helpers, and misc tabs, organized with **curated lists** instead of a rigid taxonomy.
 
 ## Decisions
 
