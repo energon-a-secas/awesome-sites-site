@@ -498,7 +498,7 @@
       "id": "tldr-pages",
       "name": "tldr pages",
       "url": "https://tldr.sh/",
-      "description": "Community-maintained command examples—like man pages, but oriented toward copy-paste usage.",
+      "description": "Community-maintained command examples: like man pages, but oriented toward copy-paste usage.",
       "labels": [
         "random",
         "developer",
@@ -606,7 +606,7 @@
       "id": "convex",
       "name": "Convex",
       "url": "https://www.convex.dev/",
-      "description": "TypeScript backend with realtime sync, auth, and server functions—no separate API layer to wire up.",
+      "description": "TypeScript backend with realtime sync, auth, and server functions. No separate API layer to wire up.",
       "labels": [
         "devops",
         "backend",
