@@ -60,7 +60,7 @@ function siteRow(site) {
     previewHtml =
       '<img src="' +
       escHtml(preview) +
-      '" alt="" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.classList.add(\'is-visible\')">' +
+      '" alt="" loading="lazy">' +
       '<div class="preview-fallback" aria-hidden="true">Preview</div>';
   } else {
     previewHtml = '<div class="preview-fallback is-visible" aria-hidden="true">No preview</div>';
@@ -90,17 +90,9 @@ function siteRow(site) {
     '</p>' +
     (labels ? '<div class="site-row__tags">' + labels + '</div>' : '') +
     '</div>' +
+    '<span class="visually-hidden"> (opens in a new tab)</span>' +
     '</a>'
   );
-}
-
-function renderCatalogMeta() {
-  const el = document.getElementById('catalogMeta');
-  if (!el || state.loading) return;
-  const nSites = state.sites.length;
-  const nLists = state.lists.length;
-  if (!nSites) return;
-  el.textContent = nSites + ' sites · ' + nLists + ' lists';
 }
 
 function renderFeed() {
@@ -111,7 +103,11 @@ function renderFeed() {
 
   const items = filteredSites();
   if (count) {
-    count.textContent = items.length ? items.length + ' shown' : '';
+    // Every site is on the page at rest, so the count shows only once a list or a search narrows
+    // it. At rest the total stays visually hidden, so a screen reader still hears it after Clear.
+    const narrowed = Boolean(state.activeListId || state.query.trim());
+    count.textContent = items.length ? items.length + (narrowed ? ' shown' : ' sites') : '';
+    count.classList.toggle('visually-hidden', !narrowed);
   }
 
   if (state.loading) {
@@ -138,7 +134,6 @@ function renderFeed() {
 }
 
 export function render() {
-  renderCatalogMeta();
   renderListPills();
   renderListHint();
   renderFeed();

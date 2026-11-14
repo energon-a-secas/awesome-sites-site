@@ -64,19 +64,19 @@ main#main { flex: 1; width: 100%; }
   padding: 32px 24px 48px;
 }
 
-.intro { margin-bottom: 28px; max-width: 52ch; }
-.intro-kicker {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 10px;
-}
-.intro-lede {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: var(--text-secondary);
+/* Read by screen readers, not drawn: "opens in a new tab" on every site row, and the result
+   count at rest. Important, so a later layout rule (the phone .result-count width) cannot
+   stretch the hidden box past the viewport. */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 .toolbar {
@@ -354,17 +354,6 @@ body:has(.header-bar.header-hidden) .lists-aside { top: 20px; }
   cursor: pointer;
   font-weight: 600;
   color: var(--text-primary);
-}
-.api-note {
-  margin-top: 12px;
-  line-height: 1.55;
-  color: var(--text-muted);
-}
-.api-note code {
-  font-size: 0.88em;
-  background: var(--surface-hover);
-  padding: 2px 6px;
-  border-radius: 4px;
 }
 .api-panel ul { margin-top: 12px; padding-left: 1.2rem; line-height: 1.85; }
 .api-panel a { color: var(--accent); text-decoration: none; }

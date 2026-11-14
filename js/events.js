@@ -34,4 +34,16 @@ export function bindEvents() {
       render();
     });
   }
+
+  // A preview that fails to load gives way to its fallback. Image errors do not bubble, so the
+  // feed listens in the capture phase (this replaced an inline onerror on every row).
+  const feed = document.getElementById('sitesFeed');
+  if (feed) {
+    feed.addEventListener('error', (ev) => {
+      const img = ev.target;
+      if (!(img instanceof HTMLImageElement) || !img.closest('.site-row__preview')) return;
+      img.hidden = true;
+      img.nextElementSibling?.classList.add('is-visible');
+    }, true);
+  }
 }
