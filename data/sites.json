@@ -671,6 +671,19 @@
       "accent": "#22d3ee",
       "preview": "assets/previews/ngrok.jpg",
       "featuredOnHub": true
+    },
+    {
+      "id": "stagepeek",
+      "name": "StagePeek",
+      "url": "https://stagepeek.live/",
+      "description": "Interactive 2D seating maps and custom 3D concert sightline simulator covering 201 stadiums and arenas worldwide with 1x-10x zoom. Free first-seat preview without login.",
+      "labels": [
+        "music",
+        "3d",
+        "concerts"
+      ],
+      "accent": "#38bdf8",
+      "featuredOnHub": false
     }
   ]
 }
